@@ -1,0 +1,66 @@
+.wrapper
+  padding-top: $margin
+  padding-bottom: $margin
+  .catalog-block
+    margin: 0 auto
+    max-width: 1200px
+    .list
+      @extend %flex-param
+      flex-flow: row wrap
+      -webkit-flex: 1 1 auto
+      width: 100%
+      .list-item
+        width: 20%
+        margin-bottom: 25px
+        padding: $padding
+        border-radius: 10px
+        border: 1px solid $border-color
+        .list-product-name
+          overflow: hidden
+          //text-overflow: ellipsis;
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
+          height: 5em
+        .list-product-rating
+          margin-bottom: 15px
+          .list-product-rating__review
+            padding: 0 10px
+            font-size: 1em
+        .list-product-prices
+          @extend %flex-param
+          padding: $padding 0
+          border-top: 1px solid $border-color
+          font-size: 1.2em
+          font-weight: 900
+        .list-product-image
+          margin: 10px 0
+          text-align: center
+          img
+            height: 150px
+            cursor: pointer
+        .description-price
+          font-size: 0.7em
+          font-weight: 100
+          margin: 10px 0
+        .other_seller_price
+          font-weight: 700
+          color: #6B6B6B
+        .list-product-sales
+          @extend %flex-param
+          margin: $margin 0 0 0
+          border-top: 2px solid #EFEFEF
+          .sales
+            margin: 10px 0
+            font-size: 0.6em
+        .add-to-cart
+          margin: 10px 0 0 0
+          background-color: darkred
+          font-size: 0.8em
+          text-align: center
+          padding: 10px 8px
+          border-radius: 5px
+          color: #F3F3F3
+          cursor: pointer
+          &:hover
+            background-color: red

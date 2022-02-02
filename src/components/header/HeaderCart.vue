@@ -1,11 +1,11 @@
 <template>
   <div>
-    <router-view/>
+    <slot name="cart"></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'CartLink'
 }
 </script>
